@@ -23,8 +23,8 @@ void loop() {
   myGLCD.setFont(SmallFont); //K���kfont Ayarland�
   myGLCD.print("Basinc(hPa):",LEFT,10);  //Ekrana bas�n� yaz�s� yazd�r�ld�
   myGLCD.setFont(BigNumbers); //B�y�k Numara fontu ayarland�       
-  myGLCD.printNumI(bmp.readPressure()/100,20,20); //Ekrana bas�n� yaz�d�r�ld�
-  Serial.println(bmp.readPressure()/100); //Seri porta bas�n� yazd�r�ld�
+  myGLCD.printNumI(bmp.readPressure()/98.5,20,20); //Ekrana bas�n� yaz�d�r�ld�
+  Serial.println(bmp.readPressure()/98.5); //Seri porta bas�n� yazd�r�ld�
   Serial.print("hPa"); //Seri porta bas�n� birimi yazd�r�ld�.
   delay(3000); //3 sn Bekleme
   myGLCD.clrScr(); //Ekran� temizle
